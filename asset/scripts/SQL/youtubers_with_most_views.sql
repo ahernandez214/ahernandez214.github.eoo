@@ -40,7 +40,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('Mister Max', 'DanTDM', 'Dan Rhodes')
+    Channel_Name IN ('Sidemen', 'KSI', 'JJ Olatunji')
 
 
 -- 5.
