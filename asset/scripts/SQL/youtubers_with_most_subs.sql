@@ -39,7 +39,7 @@ FROM
 
 -- 4. 
 WHERE 
-    channel_name in ('NoCopyrightSounds', 'DanTDM', 'Dan Rhodes')    
+    Channel_Name IN ('Sidemen', 'KSI', 'JJ Olatunji')   
 
 
 -- 5.  
