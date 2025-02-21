@@ -41,33 +41,33 @@
 
 - What is the key pain point? 
 
-The Head of Marketing wants to find out who the top YouTubers are in 2024 to decide on which YouTubers would be best to run marketing campaigns throughout the rest of the year.
+JJ Olatunji wants to determine which of his three YouTube channels—KSI, Sidemen, or JJ Olatunji—would be the most effective for promoting the England jersey for the 2025 World Cup. He needs data-driven insights to decide which channel will generate the highest engagement and visibility for the campaign.
 
 
 - What is the ideal solution? 
 
-To create a dashboard that provides insights into the top UK YouTubers in 2024 that includes their 
+To create a dashboard that provides insights into the performance of JJ Olatunji’s three channels, including:
 - subscriber count
 - total views
 - total videos, and
 - engagement metrics
 
-This will help the marketing team make informed decisions about which YouTubers to collaborate with for their marketing campaigns.
+This dashboard will help JJ and his team decide which channel to use for the England jersey promotion and future marketing campaigns.
 
 ## User story 
 
-As the Head of Marketing, I want to use a dashboard that analyses YouTube channel data in the UK . 
+As JJ Olatunji, I want to use a dashboard to analyze my three YouTube channels (KSI, Sidemen, and JJ Olatunji) and determine which has the highest engagement and reach.
 
-This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views. 
+This dashboard should allow me to compare performance metrics such as subscriber growth, average views, and audience interaction to ensure that I choose the most effective channel for promoting the England jersey for the 2025 World Cup.
 
-With this information, I can make more informed decisions about which Youtubers are right to collaborate with, and therefore maximize how effective each marketing campaign is.
+With this information, I can maximize campaign effectiveness and ensure the highest possible impact and engagement from my audience.
 
 
 # Data source 
 
 - What data is needed to achieve our objective?
 
-We need data on the top UK YouTubers in 2024 that includes their 
+We need data on the top UK YouTubers in 2024 including their 
 - channel names
 - total subscribers
 - total views
@@ -96,11 +96,11 @@ The data is sourced from Kaggle (an Excel extract), [see here to find it.](https
 To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
 
 1. Who are the top 10 YouTubers with the most subscribers?
-2. Which 3 channels have uploaded the most videos?
-3. Which 3 channels have the most views?
-4. Which 3 channels have the highest average views per video?
-5. Which 3 channels have the highest views per subscriber ratio?
-6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+2. Which of JJ's 3 channels have uploaded the most videos?
+3. Which of JJ's 3 channels have the most views?
+4. Which of JJ's 3 channels have the highest average views per video?
+5. Which of JJ's 3 channels have the highest views per subscriber ratio?
+6. Which of JJ's 3 channels have the highest subscriber engagement rate per video uploaded?
 
 For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
 
@@ -152,13 +152,13 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 ## Data exploration notes
 
-This is the stage where you have a scan of what's in the data, errors, inconcsistencies, bugs, weird and corrupted characters etc  
+This is the stage where you have a scan of what's in the data, errors, inconsistencies, bugs, weird and corrupted characters etc  
 
 
 - What are your initial observations with this dataset? What's caught your attention so far? 
 
 1. There are at least 4 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data. 
-2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
+2. The first column contains the channel ID and what appears to be channel IDS, separated by an @ symbol—we need to extract the channel names from this.
 3. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to address them.
 4. We have more data than we need, so some of these columns would need to be removed
 
@@ -184,7 +184,7 @@ Below is a table outlining the constraints on our cleaned dataset:
 | Number of Rows | 100 |
 | Number of Columns | 4 |
 
-And here is a tabular representation of the expected schema for the clean data:
+Here is a tabular representation of the expected schema for the clean data:
 
 | Column Name | Data Type | Nullable |
 | --- | --- | --- |
@@ -198,7 +198,7 @@ And here is a tabular representation of the expected schema for the clean data:
 - What steps are needed to clean and shape the data into the desired format?
 
 1. Remove unnecessary columns by only selecting the ones you need
-2. Extract Youtube channel names from the first column
+2. Extract YouTube channel names from the first column
 3. Rename columns using aliases
 
 
@@ -211,7 +211,7 @@ And here is a tabular representation of the expected schema for the clean data:
 
 
 
-```sql
+```SQL
 /*
 # 1. Select the required columns
 # 2. Extract the channel name from the 'NOMBRE' column
@@ -231,7 +231,7 @@ FROM
 
 ### Create the SQL view 
 
-```sql
+```SQL
 /*
 # 1. Create a view to store the transformed data
 # 2. Cast the extracted channel name as VARCHAR(100)
@@ -262,9 +262,9 @@ FROM
 Here are the data quality tests conducted:
 
 ## Row count check
-```sql
+```SQL
 /*
-# Count the total number of records (or rows) are in the SQL view
+# Count the total number of records (or rows) in the SQL view
 */
 
 SELECT
@@ -280,9 +280,9 @@ FROM
 
 ## Column count check
 ### SQL query 
-```sql
+```SQL
 /*
-# Count the total number of columns (or fields) are in the SQL view
+# Count the total number of columns (or fields) in the SQL view
 */
 
 
@@ -300,7 +300,7 @@ WHERE
 
 ## Data type check
 ### SQL query 
-```sql
+```SQL
 /*
 # Check the data types of each column from the view by checking the INFORMATION SCHEMA view
 */
@@ -360,7 +360,7 @@ This shows the Top UK Youtubers in 2024 so far.
 ## DAX Measures
 
 ### 1. Total Subscribers (M)
-```sql
+```SQL
 Total Subscribers (M) = 
 VAR million = 1000000
 VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
@@ -371,7 +371,7 @@ RETURN totalSubscribers
 ```
 
 ### 2. Total Views (B)
-```sql
+```SQL
 Total Views (B) = 
 VAR billion = 1000000000
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
@@ -382,7 +382,7 @@ RETURN totalViews
 ```
 
 ### 3. Total Videos
-```sql
+```SQL
 Total Videos = 
 VAR totalVideos = SUM(view_uk_youtubers_2024[total_videos])
 
@@ -391,7 +391,7 @@ RETURN totalVideos
 ```
 
 ### 4. Average Views Per Video (M)
-```sql
+```SQL
 Average Views per Video (M) = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -404,7 +404,7 @@ RETURN finalAvgViewsPerVideo
 
 
 ### 5. Subscriber Engagement Rate
-```sql
+```SQL
 Subscriber Engagement Rate = 
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -416,7 +416,7 @@ RETURN subscriberEngRate
 
 
 ### 6. Views per subscriber
-```sql
+```SQL
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
@@ -439,8 +439,8 @@ For this analysis, we're going to focus on the questions below to get the inform
 
 Here are the key questions we need to answer for our marketing client: 
 1. Who are the top 10 YouTubers with the most subscribers?
-2. Which 3 channels have uploaded the most videos?
-3. Which 3 channels have the most views?
-4. Which 3 channels have the highest average views per video?
-5. Which 3 channels have the highest views per subscriber ratio?
-6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+2. Which of JJ's 3 channels have uploaded the most videos?
+3. Which of JJ's 3 channels have the most views?
+4. Which of JJ's 3 channels have the highest average views per video?
+5. Which of JJ's 3 channels have the highest views per subscriber ratio?
+6. Which of JJ's 3 channels has the highest subscriber engagement rate per video uploaded?
