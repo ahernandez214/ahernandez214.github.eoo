@@ -39,7 +39,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('GRM Daily', 'Man City', 'YOGSCAST Lewis & Simon ')
+    Channel_Name IN ('Sidemen', 'KSI', 'JJ Olatunji')
 
 
 -- 5.
