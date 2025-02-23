@@ -514,7 +514,7 @@ Here are the key questions we need to answer for our marketing client:
 
 ### Notes
 
-For this analysis, we'll prioritize analyzing the metrics that are important in generating the expected ROI for our marketing client, which are the YouTube channels with the most 
+For this analysis, we'll prioritize analyzing the metrics that are important in generating the expected ROI for our marketing client, which of JJ's YouTube channels with the most 
 
 - subscribers
 - total views
