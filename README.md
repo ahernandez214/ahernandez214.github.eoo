@@ -615,7 +615,7 @@ ORDER BY
 
 #### Output
 
-![Most subsc](assets/images/youtubers_with_the_most_subs.png)
+![Most subsc](asset/images/youtubers_with_the_most_subs.png)
 
 ### 2. JJ's YouTube channel's number of videos uploaded
 
