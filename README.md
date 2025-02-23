@@ -100,9 +100,9 @@ To understand what it should contain, we need to figure out what questions we ne
 3. Which of JJ's 3 channels have the most views?
 4. Which of JJ's 3 channels have the highest average views per video?
 5. Which of JJ's 3 channels have the highest views per subscriber ratio?
-6. Which of JJ's 3 channels have the highest subscriber engagement rate per video uploaded?
+6. Which of JJ's 3 channels has the highest subscriber engagement rate per video uploaded?
 
-For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
+For now, these are some of the questions we need to answer, this may change as we progress down our analysis.; however through 
 
 
 ## Dashboard mockup
@@ -167,7 +167,7 @@ This is the stage where you have a scan of what's in the data, errors, inconsist
 
 
 ## Data cleaning 
-- What do we expect the clean data to look like? (What should it contain? What contraints should we apply to it?)
+- What do we expect the clean data to look like? (What should it contain? What constraints should we apply to it?)
 
 The aim is to refine our dataset to ensure it is structured and ready for analysis. 
 
@@ -524,13 +524,13 @@ For this analysis, we'll prioritize analyzing the metrics that are important in 
 
 ## Validation 
 
-### 1. Youtubers with the most subscribers 
+### 1. Ksi Youtube's channel's numbers of subscribers 
 
 #### Calculation breakdown
 
 Campaign idea = product placement 
 
-1. KSI
+a. KSI
 - Average views per video = 4.80 million
 - Product cost = $5
 - Potential units sold per video = 4.80 million x 2% conversion rate = 96,000 units sold
@@ -545,7 +545,7 @@ b. Sidemen
 - Potential units sold per video = 17.34 million x 2% conversion rate = 346,000 units sold
 - Potential revenue per video = 346,000 x $5 = $1,734,000
 - Campaign cost (one-time fee) = $50,000
-- **Net profit = $$1,734,000 - $50,000 = $484,000**
+- **Net profit = $1,734,000 - $50,000 = $484,000**
 
 c. JJ Olatunji
 
@@ -617,40 +617,40 @@ ORDER BY
 
 ![Most subsc](assets/images/youtubers_with_the_most_subs.png)
 
-### 2. Youtubers with the most videos uploaded
+### 2. JJ's YouTube channel's numbers of videos uploaded
 
 ### Calculation breakdown 
 
 Campaign idea = sponsored video series  
 
-1. GRM Daily
-- Average views per video = 510,000
+a. **JJ Olatunji**
+- Average views per video = 3,160,000
 - Product cost = $5
-- Potential units sold per video = 510,000 x 2% conversion rate = 10,200 units sold
-- Potential revenue per video = 10,200 x $5= $51,000
+- Potential units sold per video = 3,160,000 x 2% conversion rate = 63,200 units sold
+- Potential revenue per video = 63,200 x $5= $316,000
 - Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $51,000 - $55,000 = -$4,000 (potential loss)**
+- **Net profit = $316,000 - $55,000 = $261,00 (profit)**
 
-b. **Manchester City**
+b. **KSI**
 
-- Average views per video = 240,000
+- Average views per video = 4,800,000
 - Product cost = $5
-- Potential units sold per video = 240,000 x 2% conversion rate = 4,800 units sold
-- Potential revenue per video = 4,800 x $5= $24,000
+- Potential units sold per video = 4,800,000 million x 2% conversion rate = 96,000 units sold
+- Potential revenue per video = 96,000  x $5 = $480,000
 - Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $24,000 - $55,000 = -$31,000 (potential loss)**
+- **Net profit = $480,000 - $55,000 = $425,00 (profit)**
 
-b. **Yogscast**
+c. **Sidemen**
 
-- Average views per video = 710,000
+- Average views per video = 17,340,000 
 - Product cost = $5
-- Potential units sold per video = 710,000 x 2% conversion rate = 14,200 units sold
-- Potential revenue per video = 14,200 x $5= $71,000
+- Potential units sold per video = 17,340,000  x 2% conversion rate = 346,000 units sold
+- Potential revenue per video = 346,000 x $5 = $1,734,000
 - Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $71,000 - $55,000 = $16,000 (profit)**
+- **Net profit = $1,734,000 - $55,000 = $1,679,000 (profit)**
 
 
-Best option from category: Yogscast
+Best option from category: Sidemen
 
 #### SQL query 
 ```SQL
@@ -695,7 +695,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('GRM Daily', 'Man City', 'YOGSCAST Lewis & Simon ')
+    channel_name IN ('KSI', 'Sidemen', 'JJ Olatunji')
 
 
 -- 5.
@@ -708,40 +708,40 @@ ORDER BY
 ![Most videos](assets/images/youtubers_with_the_most_videos.png)
 
 
-### 3.  Youtubers with the most views 
+### 3.  JJ's Youtuber Channel numbers of views 
 
 #### Calculation breakdown
 
 Campaign idea = Influencer marketing 
 
-a. DanTDM
+a. Sidemen
 
-- Average views per video = 5.34 million
+- Average views per video = 17,340,000 
 - Product cost = $5
-- Potential units sold per video = 5.34 million x 2% conversion rate = 106,800 units sold
-- Potential revenue per video = 106,800 x $5 = $534,000
+- Potential units sold per video = 17,340,000  x 2% conversion rate = 346,000 units sold
+- Potential revenue per video = 346,000 x $5 = $1,734,000
 - Campaign cost (3-month contract) = $130,000
-- **Net profit = $534,000 - $130,000 = $404,000**
+- **Net profit = $1,734,000 - $130,000 = $1,604,000**
 
-b. Dan Rhodes
+b. KSI
 
-- Average views per video = 11.15 million
+- Average views per video = 4,800,000
 - Product cost = $5
-- Potential units sold per video = 11.15 million x 2% conversion rate = 223,000 units sold
-- Potential revenue per video = 223,000 x $5 = $1,115,000
+- Potential units sold per video = 4,800,000 million x 2% conversion rate = 96,000 units sold
+- Potential revenue per video = 96,000  x $5 = $480,000
 - Campaign cost (3-month contract) = $130,000
-- **Net profit = $1,115,000 - $130,000 = $985,000**
+- **Net profit = $480,000 - $130,000 = $350,000**
 
-c. Mister Max
+c. JJ Olatunji
 
-- Average views per video = 14.06 million
+- Average views per video = 3,160,000
 - Product cost = $5
-- Potential units sold per video = 14.06 million x 2% conversion rate = 281,200 units sold
-- Potential revenue per video = 281,200 x $5 = $1,406,000
+- Potential units sold per video = 3,160,000 x 2% conversion rate = 63,200 units sold
+- Potential revenue per video = 63,200 x $5= $316,000
 - Campaign cost (3-month contract) = $130,000
-- **Net profit = $1,406,000 - $130,000 = $1,276,000**
+- **Net profit = $316,000 - $130,000 = $186,000**
 
-Best option from category: Mister Max
+Best option from category: Sidemen
 
 
 
@@ -789,7 +789,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('Mister Max', 'DanTDM', 'Dan Rhodes')
+    channel_name IN ('KSI', 'Sidemen', 'JJ Olatunji')
 
 
 -- 5.
@@ -801,3 +801,34 @@ ORDER BY
 #### Output
 
 ![Most views](assets/images/youtubers_with_the_most_views.png)
+
+
+
+## Recommendations 
+
+- What do you recommend based on the insights gathered?
+
+1. Sidemen is the best YouTube channel to collaborate with if we want to maximize visibility because this channel has the highest average views per video.
+
+### Potential ROI 
+
+- What ROI do we expect if we take this course of action?
+1. Setting up a collaboration deal with Sidemen would generate a net profit of $1,684,000 per video.
+2. An influencer marketing contract with KSI can see the client generate a net profit of $430,000 per video.
+3. If we go with a product placement campaign with JJ Olatunji, this could generate the client approximately $266,000 per video.
+
+
+### Action plan
+- What course of action should we take and why?
+
+  Based on our analysis, we believe the best channel to advance a long-term partnership deal with to promote the client's products is Sidemen.
+
+We'll have conversations with the marketing client to forecast what they expect from this collaboration. Once we observe that we're hitting the expected milestones, we'll consider potential partnerships with KSI and JJ Olatunji in the future.
+
+- What steps do we take to implement the recommended decisions effectively?
+
+
+1. Reach out to the teams behind each of these channels, starting with Sidemen.
+2. Negotiate contracts within the budget allocated to each marketing campaign.
+3. Kick off the campaigns and track their performance against key performance indicators (KPIs).
+4. Review how the campaigns have performed, gather insights, and optimize based on feedback from converted customers and audience engagement.
