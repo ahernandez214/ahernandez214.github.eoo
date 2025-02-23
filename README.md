@@ -119,7 +119,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 
 
-![Dashboard-Mockup](assets/images/dashboard_mockup.png)
+![Dashboard-Mockup](asset/images/dashboard_mockup.png)
 
 
 ## Tools 
@@ -274,7 +274,7 @@ FROM
 
 ```
 
-![Row count check](assets/images/1_row_count_check.png)
+![Row count check](asset/images/1_row_count_check.png)
 
 
 
@@ -294,7 +294,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024'
 ```
 ### Output 
-![Column count check](assets/images/2_column_count_check.png)
+![Column count check](asset/images/2_column_count_check.png)
 
 
 
@@ -524,7 +524,7 @@ For this analysis, we'll prioritize analyzing the metrics that are important in 
 
 ## Validation 
 
-### 1. Ksi Youtube's channel's numbers of subscribers 
+### 1. Ksi YouTube's channel's number of subscribers 
 
 #### Calculation breakdown
 
@@ -617,7 +617,7 @@ ORDER BY
 
 ![Most subsc](assets/images/youtubers_with_the_most_subs.png)
 
-### 2. JJ's YouTube channel's numbers of videos uploaded
+### 2. JJ's YouTube channel's number of videos uploaded
 
 ### Calculation breakdown 
 
@@ -708,7 +708,7 @@ ORDER BY
 ![Most videos](assets/images/youtubers_with_the_most_videos.png)
 
 
-### 3.  JJ's Youtuber Channel numbers of views 
+### 3.  JJ's Youtuber Channel number of views 
 
 #### Calculation breakdown
 
@@ -800,7 +800,7 @@ ORDER BY
 
 #### Output
 
-![Most views](assets/images/youtubers_with_the_most_views.png)
+![Most views](asset/images/youtubers_with_the_most_views.png)
 
 
 
