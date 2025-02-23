@@ -315,12 +315,12 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024';
 ```
 ### Output
-![Data type check](assets/images/3_data_type_check.png)
+![Data type check](asset/images/3_data_type_check.png)
 
 
 ## Duplicate count check
 ### SQL query 
-```sql
+```SQL
 /*
 # 1. Check for duplicate rows in the view
 # 2. Group by the channel name
@@ -343,7 +343,7 @@ HAVING
     COUNT(*) > 1;
 ```
 ### Output
-![Duplicate count check](assets/images/4_duplicate_records_check.png)
+![Duplicate count check](asset/images/4_duplicate_records_check.png)
 
 # Visualization 
 
@@ -352,7 +352,7 @@ HAVING
 
 - What does the dashboard look like?
 
-![GIF of Power BI Dashboard](assets/images/top_uk_youtubers_2024.gif)
+![GIF of Power BI Dashboard](asset/images/top_uk_youtubers_2024.gif)
 
 This shows the Top UK Youtubers in 2024 so far. 
 
@@ -705,7 +705,7 @@ ORDER BY
 
 #### Output
 
-![Most videos](assets/images/youtubers_with_the_most_videos.png)
+![Most videos](asset/images/youtubers_with_the_most_videos.png)
 
 
 ### 3.  JJ's Youtuber Channel number of views 
