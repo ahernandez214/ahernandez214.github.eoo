@@ -169,7 +169,7 @@ This is the stage where you have a scan of what's in the data, errors, inconsist
 ## Data cleaning 
 - What do we expect the clean data to look like? (What should it contain? What constraints should we apply to it?)
 
-The aim is to refine our dataset to ensure it is structured and ready for analysis. 
+We aim to refine our dataset to ensure it is structured and ready for analysis. 
 
 The cleaned data should meet the following criteria and constraints:
 
@@ -439,10 +439,10 @@ For this analysis, we're going to focus on the questions below to get the inform
 
 Here are the key questions we need to answer for our marketing client: 
 1. Who are the top 10 YouTubers with the most subscribers?
-2. Which of JJ's 3 channels have uploaded the most videos?
-3. Which of JJ's 3 channels have the most views?
-4. Which of JJ's 3 channels have the highest average views per video?
-5. Which of JJ's 3 channels have the highest views per subscriber ratio?
+2. Which of JJ's 3 channels has uploaded the most videos?
+3. Which of JJ's 3 channels has the most views?
+4. Which of JJ's 3 channels has the highest average views per video?
+5. Which of JJ's 3 channels has the highest views per subscriber ratio?
 6. Which of JJ's 3 channels has the highest subscriber engagement rate per video uploaded?
 
 
@@ -462,7 +462,7 @@ Here are the key questions we need to answer for our marketing client:
 | 10   | Ali-A                | 18.90           |
 
 
-### 2. Which of JJ's 3 channels have uploaded the most videos?
+### 2. Which of JJ's 3 channels has uploaded the most videos?
 
 | Rank | Channel Name    | Videos Uploaded |
 |------|-----------------|-----------------|
@@ -472,7 +472,7 @@ Here are the key questions we need to answer for our marketing client:
 
 
 
-### 3. Which of JJ's 3 channels have the most views?
+### 3. Which of JJ's 3 channels has the most views?
 
 
 | Rank | Channel Name | Total Views (B) |
@@ -482,7 +482,7 @@ Here are the key questions we need to answer for our marketing client:
 | 3    | JJ Olatunji  | 4.24            |
 
 
-### 4. Which of JJ's 3 channels have the highest average views per video?
+### 4. Which of JJ's 3 channels has the highest average views per video?
 
 | Channel Name | Average Views per Video (M) |
 |--------------|-----------------|
@@ -491,7 +491,7 @@ Here are the key questions we need to answer for our marketing client:
 | JJ Olatunji  | 3.16            |
 
 
-### 5. Which of JJ's 3 channels have the highest views per subscriber ratio?
+### 5. Which of JJ's 3 channels has the highest views per subscriber ratio?
 
 | Rank | Channel Name       | Views per Subscriber        |
 |------|-----------------   |---------------------------- |
