@@ -67,7 +67,7 @@ With this information, I can maximize campaign effectiveness and ensure the high
 
 - What data is needed to achieve our objective?
 
-We need data on the top UK YouTubers in 2024 including their 
+We need data on the top UK YouTubers in 2024, including their 
 - channel names
 - total subscribers
 - total views
@@ -96,10 +96,10 @@ The data is sourced from Kaggle (an Excel extract), [see here to find it.](https
 To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
 
 1. Who are the top 10 YouTubers with the most subscribers?
-2. Which of JJ's 3 channels have uploaded the most videos?
-3. Which of JJ's 3 channels have the most views?
-4. Which of JJ's 3 channels have the highest average views per video?
-5. Which of JJ's 3 channels have the highest views per subscriber ratio?
+2. Which of JJ's 3 channels has uploaded the most videos?
+3. Which of JJ's 3 channels has the most views?
+4. Which of JJ's 3 channels has the highest average views per video?
+5. Which of JJ's 3 channels has the highest views per subscriber ratio?
 6. Which of JJ's 3 channels has the highest subscriber engagement rate per video uploaded?
 
 For now, these are some of the questions we need to answer, this may change as we progress down our analysis.; however through 
@@ -354,7 +354,7 @@ HAVING
 
 ![GIF of Power BI Dashboard](asset/images/top_uk_youtubers_2024.gif)
 
-This shows the Top UK Youtubers in 2024 so far. 
+This shows the Top UK YouTubers in 2024 so far. 
 
 
 ## DAX Measures
