@@ -142,7 +142,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 1. Get the data
 2. Explore the data in Excel
-3. Load the data into SQL Server
+3. Load the data into the SQL Server
 4. Clean the data with SQL
 5. Test the data with SQL
 6. Visualize the data in Power BI
@@ -524,7 +524,7 @@ For this analysis, we'll prioritize analyzing the metrics that are important in 
 
 ## Validation 
 
-### 1. Ksi YouTube's channel's number of subscribers 
+### 1. Ksi YouTube channel's number of subscribers 
 
 #### Calculation breakdown
 
@@ -557,7 +557,7 @@ c. JJ Olatunji
 - **Net profit = $316,000- $50,000 = $266,000**
 
 
-Best option from category: Sidemen
+The best option from the category: Sidemen
 
 
 #### SQL query 
