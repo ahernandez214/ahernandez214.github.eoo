@@ -1,4 +1,4 @@
-# Data Portfolio: Excel to Power BI 
+# YouTube Channel Engagement Analysis
 
 
 ![excel-to-powerbi-animated-diagram](asset/images/kaggle_to_powerbi.gif)
